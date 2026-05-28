@@ -1,0 +1,154 @@
+/* ─────────────────────────────────────────────
+   HERO.CSS
+   Palette: black · chilli red · farm green
+───────────────────────────────────────────── */
+
+/* ── TOKENS ── */
+:root {
+  --hero-overlay:      rgba(15, 23, 42, 0.62);
+  --hero-text:       #e2d3c2; /* chilli red */
+  --hero-subtext:      rgba(255, 255, 255, 0.85);
+  --hero-strip:        #134b02;       
+  --btn-primary-bg:    #15803d;  
+  --btn-primary-text:  #f9fafb;
+  --btn-primary-hover-bg:   transparent;
+  --btn-primary-hover-border: #f9fafb;
+  --btn-secondary-bg:      transparent;
+  --btn-secondary-border:  #15803d;
+  --btn-secondary-hover-bg: #15803d;
+  --btn-secondary-hover-text: #f9fafb;
+  --text-primary: #f5f3ef;   /* warm off-white (NOT pure white) */
+  --text-secondary: #d6d3cc; /* soft cream gray */
+  --text-muted: #b7b2a8;     /* faded natural tone */
+  --accent-green: #15803d;   /* farm green */
+}
+
+/* ── SECTION ── */
+.hero {
+  width: 100%;
+  min-height: 560px;
+  background-image: url("../../assets/chillie5.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* ── OVERLAY ── */
+.hero-overlay {
+  width: 100%;
+  min-height: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5rem 1.5rem;
+}
+
+/* ── CONTENT ── */
+.hero-content {
+  max-width: 720px;
+  text-align: center;
+  color: var(--hero-text);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+/* ── TITLE ── */
+.hero-title {
+  font-size: clamp(2rem, 5vw, 3.2rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--hero-text);
+}
+
+/* ── SUBTITLE ── */
+.hero-subtitle {
+  font-size: clamp(0.95rem, 2vw, 1.15rem);
+  color: var(--hero-subtext);
+  line-height: 1.75;
+  max-width: 600px;
+  font-weight: bolder;
+}
+
+/* ── MARKETING STRIP ── */
+.marketing_strip {
+  color: var(--hero-strip);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 0.85rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+/* ── CTA BUTTONS ── */
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  padding: 0.8rem 1.8rem;
+  border-radius: 8px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  transition: background 200ms ease, color 200ms ease, border-color 200ms ease, transform 200ms ease;
+}
+
+.btn:hover {
+  transform: translateY(-2px);
+}
+
+/* PRIMARY */
+.btn-primary {
+  background: var(--btn-primary-bg);
+  color: var(--btn-primary-text);
+  border-color: var(--btn-primary-bg);
+}
+
+.btn-primary:hover {
+  background: var(--btn-primary-hover-bg);
+  border-color: var(--hero-text);
+  color: var(--hero-text);
+}
+
+/* SECONDARY */
+.btn-secondary {
+  background: var(--btn-secondary-bg);
+  border-color: var(--hero-text);
+  color: var(--hero-text);
+}
+
+.btn-secondary:hover {
+  background: var(--btn-secondary-hover-bg);
+  color: var(--btn-secondary-hover-text);
+  border-color: var(--btn-secondary-hover-bg);
+}
+
+/* ── MOBILE ── */
+@media (max-width: 600px) {
+  .hero-overlay {
+    padding: 4rem 1.2rem;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .btn {
+    width: 100%;
+    max-width: 280px;
+  }
+}

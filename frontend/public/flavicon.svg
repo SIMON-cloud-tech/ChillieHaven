@@ -1,0 +1,49 @@
+<svg width="100%" viewBox="0 0 690 690" role="img" style="" xmlns="http://www.w3.org/2000/svg"><defs><mask id="imagine-text-gaps-lr71kc" maskUnits="userSpaceOnUse"><rect x="0" y="0" width="690" height="690" fill="white"/><rect x="92.9098129272461" y="86.99465942382812" width="355.7088317871094" height="200.21875" fill="black" rx="2"/><rect x="133.66342163085938" y="399.5685729980469" width="317.072509765625" height="134.67453002929688" fill="black" rx="2"/><rect x="195.72500610351562" y="372" width="288.54998779296875" height="73" fill="black" rx="2"/></mask></defs>
+  <title style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">FreshGrow logo — green and red circular badge</title>
+  <desc style="fill:rgb(0, 0, 0);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto">FreshGrow circular badge logo using only green and red, clean and minimal.</desc>
+
+  <rect width="680" height="680" fill="#f9fafb" rx="16" style="fill:rgb(249, 250, 251);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Outer ring green -->
+  <circle cx="340" cy="340" r="280" fill="#15803d" style="fill:rgb(21, 128, 61);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Ring gap white -->
+  <circle cx="340" cy="340" r="258" fill="#f9fafb" style="fill:rgb(249, 250, 251);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Inner fill red -->
+  <circle cx="340" cy="340" r="238" fill="#b91c1c" style="fill:rgb(185, 28, 28);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Arc text TOP -->
+  <path id="topA" d="M 112 340 A 228 228 0 0 1 568 340" fill="none" mask="url(#imagine-text-gaps-lr71kc)" style="fill:none;stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text font-family="sans-serif" font-size="21" fill="#f9fafb" letter-spacing="0.2em" font-weight="600" style="fill:rgb(249, 250, 251);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:sans-serif;font-size:21px;font-weight:600;text-anchor:start;dominant-baseline:auto">
+    <textPath href="#topA" startOffset="8%" style="fill:rgb(249, 250, 251);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:sans-serif;font-size:21px;font-weight:600;text-anchor:start;dominant-baseline:auto">FRESH · ORGANIC · CHILLIES</textPath>
+  </text>
+
+  <!-- Arc text BOTTOM -->
+  <path id="botA" d="M 120 358 A 228 228 0 0 0 560 358" fill="none" mask="url(#imagine-text-gaps-lr71kc)" style="fill:none;stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <text font-family="sans-serif" font-size="19" fill="#f9fafb" letter-spacing="0.18em" font-weight="600" style="fill:rgb(249, 250, 251);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:sans-serif;font-size:19px;font-weight:600;text-anchor:start;dominant-baseline:auto">
+    <textPath href="#botA" startOffset="10%" style="fill:rgb(249, 250, 251);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:sans-serif;font-size:19px;font-weight:600;text-anchor:start;dominant-baseline:auto">NAIROBI · KENYA · EST 2024</textPath>
+  </text>
+
+  <!-- Dot dividers -->
+  <circle cx="124" cy="340" r="5" fill="#f9fafb" style="fill:rgb(249, 250, 251);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <circle cx="556" cy="340" r="5" fill="#f9fafb" style="fill:rgb(249, 250, 251);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Chilli body -->
+  <ellipse cx="340" cy="292" rx="36" ry="70" fill="#f9fafb" transform="rotate(-8 340 292)" style="fill:rgb(249, 250, 251);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Chilli highlight -->
+  <ellipse cx="326" cy="270" rx="9" ry="24" fill="#15803d" opacity="0.25" transform="rotate(-8 326 270)" style="fill:rgb(21, 128, 61);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:0.25;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Tip curl -->
+  <path d="M315 350 Q303 372 311 382" stroke="#15803d" stroke-width="5.5" fill="none" stroke-linecap="round" mask="url(#imagine-text-gaps-lr71kc)" style="fill:none;stroke:rgb(21, 128, 61);color:rgb(251, 251, 254);stroke-width:5.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Stem -->
+  <path d="M347 222 Q358 200 354 180" stroke="#15803d" stroke-width="6.5" fill="none" stroke-linecap="round" mask="url(#imagine-text-gaps-lr71kc)" style="fill:none;stroke:rgb(21, 128, 61);color:rgb(251, 251, 254);stroke-width:6.5px;stroke-linecap:round;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Leaf left -->
+  <path d="M354 180 Q334 166 340 188 Q347 183 354 180Z" fill="#15803d" style="fill:rgb(21, 128, 61);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+  <!-- Leaf right -->
+  <path d="M354 180 Q376 166 368 190 Q361 184 354 180Z" fill="#166534" style="fill:rgb(22, 101, 52);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+  <!-- Wordmark -->
+  <text x="340" y="428" font-family="sans-serif" font-size="50" font-weight="700" fill="#f9fafb" text-anchor="middle" letter-spacing="0.03em" style="fill:rgb(249, 250, 251);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:sans-serif;font-size:50px;font-weight:700;text-anchor:middle;dominant-baseline:auto">FreshGrow</text>
+
+  <!-- Red underline -->
+  <rect x="245" y="443" width="190" height="3.5" rx="2" fill="#15803d" style="fill:rgb(21, 128, 61);stroke:none;color:rgb(251, 251, 254);stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;opacity:1;font-family:&quot;Anthropic Sans&quot;, -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, sans-serif;font-size:16px;font-weight:400;text-anchor:start;dominant-baseline:auto"/>
+
+</svg>

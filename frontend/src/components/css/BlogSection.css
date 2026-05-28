@@ -1,0 +1,108 @@
+/* MAIN SECTION */
+.blog-section {
+  width: 100%;
+  padding: 4rem 1rem;
+  background: #ffffff; /* white = clean readable background for blog content */
+}
+
+/* TITLE */
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #000000; /* black = strong readability and contrast */
+  margin-bottom: 2rem;
+}
+
+/* SEARCH WRAPPER */
+.blog-search-wrapper {
+  display: flex;
+  justify-content: center; /* center search bar */
+  margin-bottom: 1.5rem;
+}
+
+/* SEARCH INPUT */
+.blog-search-input {
+  width: 60%;
+  max-width: 500px;
+  padding: 0.8rem 1rem;
+  border: 2px solid #008000;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+/* focus effect */
+.blog-search-input:focus {
+  border-color: #ff0000; /* red = active focus / attention */
+  box-shadow: 0 0 6px rgba(255, 0, 0, 0.3);
+}
+
+/* LOAD MORE WRAPPER */
+.blog-load-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 1rem;
+}
+/* LOAD MORE BUTTON */
+.load-more-btn {
+  background: #008000; /* green = growth / "load more content" */
+  color: #ffffff;      /* white text = readability */
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* hover state */
+.load-more-btn:hover {
+  background: #ff0000; /* red = interaction feedback / urgency */
+}
+
+/* GRID */
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  padding: 0 1rem;
+}
+
+/* CARD */
+.blog-card {
+  background: #ffffff; /* white = clean card surface */
+  border: 1px solid #000000; /* black = structure / separation */
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.2s ease;
+}
+
+/* hover effect */
+.blog-card:hover {
+  transform: translateY(-5px);
+  border-color: #008000; /* green = highlight active card */
+}
+
+/* DATE TEXT */
+.blog-card small {
+  color: #ff0000; /* red = metadata emphasis (date is important) */
+}
+.blog-card h3 {
+  font-size: 1.1rem;
+}
+
+.blog-card p {
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+/* MOBILE FIX */
+@media (max-width: 600px) {
+  .blog-search-input {
+    width: 90%; /* 🔥 almost full width on mobile */
+  }
+}
+@media (max-width: 600px) {
+  .blog-load-wrapper {
+    justify-content: center; /* 🔥 center on mobile */
+  }
+  .blog-section {
+    padding: 2rem 1rem; /* 🔥 reduce heavy spacing */
+  }
+}

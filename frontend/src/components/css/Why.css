@@ -1,0 +1,104 @@
+/* src/components/WhyUs.css */
+
+.whyus {
+  padding: 5rem 1.2rem;
+  background: #f9fafb;
+  display: flex;
+  width: 100vw;
+}
+
+.whyus-container {
+  max-width: 100vw;
+}
+
+/* HEADING */
+.whyus-heading {
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 3rem;
+}
+
+/* GRID */
+.whyus-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+/* CARD */
+.whyus-card {
+  background: white;
+  padding: 2rem 1.5rem;
+  border-radius: 16px;
+
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+
+  transition: 0.3s ease;
+}
+
+.whyus-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ICON */
+.whyus-icon {
+  width: 65px;
+  height: 65px;
+
+  border-radius: 50%;
+
+  background: #dc2626;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 1.6rem;
+
+  margin-bottom: 1.2rem;
+}
+
+/* TITLE */
+.whyus-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #111827;
+
+  margin-bottom: 1rem;
+}
+
+/* DESCRIPTION */
+.whyus-description {
+  color: #6b7280;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+/* TABLETS */
+@media (max-width: 950px) {
+  .whyus-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* MOBILE */
+@media (max-width: 600px) {
+  .whyus {
+    padding: 4rem 1rem;
+  }
+
+  .whyus-heading {
+    font-size: 2rem;
+  }
+
+  .whyus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .whyus-card {
+    padding: 1.8rem 1.3rem;
+  }
+}

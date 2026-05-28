@@ -1,0 +1,109 @@
+/* ─── BLOG PAGE ─────────────────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@400;500&display=swap');
+
+.blog-page {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 3rem 1.5rem 6rem;
+  font-family: 'DM Sans', sans-serif;
+  color: #1a1a1a;
+}
+
+/* ─── TITLE ─────────────────────────────────────────────────── */
+.blog-page h1 {
+  font-family: 'Lora', Georgia, serif;
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #111111;
+  margin: 0 0 0.75rem;
+}
+
+/* ─── META / DATE ────────────────────────────────────────────── */
+.blog-page small {
+  display: block;
+  font-size: 0.82rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #008000;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* ─── DIVIDER AFTER DATE ─────────────────────────────────────── */
+.blog-page small::after {
+  content: '';
+  display: block;
+  width: 48px;
+  height: 3px;
+  background: #008000;
+  margin-top: 1.25rem;
+  border-radius: 2px;
+}
+
+/* ─── BODY CONTENT ───────────────────────────────────────────── */
+.blog-page p {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.08rem;
+  line-height: 1.95;
+  color: #2d2d2d;
+  margin: 0;
+  white-space: pre-line;        /* respects \n\n paragraph breaks in JSON */
+
+  /* ── Paragraph spacing via first-line indent (magazine style) ── */
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+/* ─── SIMULATED PARAGRAPHS via \n\n ─────────────────────────── */
+/* Each double-newline block gets breathing room */
+.blog-page p > br + br {
+  display: block;
+  content: '';
+  margin-top: 1.6rem;
+}
+
+/* ─── SECTION HEADING STYLE (when content uses all-caps lines) ── */
+/* The \n\nHeading\n\n pattern in JSON will render as its own line */
+.blog-page p {
+  /* highlight standalone heading-like lines inside the p tag */
+}
+
+/* ─── LOADING STATE ──────────────────────────────────────────── */
+.blog-page > p:only-child {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  color: #888;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+/* ─── NOT FOUND STATE ────────────────────────────────────────── */
+.blog-page h2 {
+  font-family: 'Lora', Georgia, serif;
+  font-size: 1.5rem;
+  color: #111;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+/* ─── MOBILE ─────────────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .blog-page {
+    padding: 2rem 1.2rem 4rem;
+  }
+
+  .blog-page h1 {
+    font-size: 1.55rem;
+  }
+
+  .blog-page p {
+    font-size: 1rem;
+    line-height: 1.85;
+    text-align: left;    /* left-align on mobile for readability */
+  }
+}

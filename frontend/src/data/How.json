@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "icon": "FaSeedling",
+    "title": "Choose Your Chillies",
+    "description": "Browse our collection of fresh organic chillies and select the products you need."
+  },
+  {
+    "id": 2,
+    "icon": "FaShoppingBasket",
+    "title": "Place Your Order",
+    "description": "Add products to cart and complete your order quickly using our simple checkout process."
+  },
+  {
+    "id": 3,
+    "icon": "FaTruck",
+    "title": "Fast Delivery",
+    "description": "We carefully package your chillies and deliver them fresh to your preferred location."
+  }
+]

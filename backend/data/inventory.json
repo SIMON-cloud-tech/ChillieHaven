@@ -1,0 +1,65 @@
+[
+  {
+    "_id": "1",
+    "name": "Red Bullet Chillies",
+    "description": "Hot and vibrant chillies perfect for stews, sauces, and everyday cooking.",
+    "image": "chilie2.jpeg",
+    "price": 120
+  },
+  {
+    "_id": "2",
+    "name": "Green Fresh Chillies",
+    "description": "Mild to medium heat chillies ideal for daily home meals.",
+    "image": "chillie3.jpeg",
+    "price": 100
+  },
+  {
+    "_id": "3",
+    "name": "Bird Eye Chillies",
+    "description": "Small but extremely hot chillies for strong spice lovers.",
+    "image": "chillie1.jpeg",
+    "price": 150
+  },
+  {
+    "_id": "4",
+    "name": "Dried Chillies Pack",
+    "description": "Sun-dried chillies for long storage and rich flavor cooking.",
+    "image": "chillie5.jpeg",
+    "price": 180
+  },
+  {
+    "_id": "5",
+    "name": "Crushed Chilli Flakes",
+    "description": "Perfect for pizza, sauces, and quick spice boosting.",
+    "image": "chillie3.jpeg",
+    "price": 130
+  },
+  {
+    "_id": "6",
+    "name": "Extra Hot Farm Mix",
+    "description": "Mixed farm chillies for restaurants and heavy spice meals.",
+    "image": "chilie2.jpeg",
+    "price": 200
+  },
+  {
+    "_id": "7",
+    "name": "Organic Sweet Chillies",
+    "description": "Mild organic chillies with natural sweetness and aroma.",
+    "image": "chilie2.jpeg",
+    "price": 160
+  },
+  {
+    "_id": "8",
+    "name": "Restaurant Bulk Pack",
+    "description": "Large bulk supply for hotels, cafés, and food businesses.",
+    "image": "chilie2.jpeg",
+    "price": 500
+  },
+  {
+    "_id": "9",
+    "name": "Fresh Farm Combo",
+    "description": "Mixed selection of fresh chillies delivered daily.",
+    "image": "chilie2.jpeg",
+    "price": 250
+  }
+]

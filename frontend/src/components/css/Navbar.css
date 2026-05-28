@@ -1,0 +1,304 @@
+
+/* ─────────────────────────────────────────────
+   NAVBAR.CSS
+   Aesthetic: premium earthy-dark chilli brand
+───────────────────────────────────────────── */
+
+/* ── TOKENS ── */
+:root {
+  --nav-bg:          #0f172a
+  --nav-border:      rgba(255,255,255,0.08);
+  --nav-height:      62px;
+  --nav-logo-color:  #ffffff;
+  --nav-link-color:  #ffffff;
+  --nav-link-hover:  #cbd5e1;
+  --primary-bg:      #15803d;  /* farm green */
+  --nav-accent:      #b91c1c;  /* chilli red */
+  --nav-mobile-bg:   #0f172a;
+  --nav-z:           1000;
+  --transition:      150ms ease;
+}
+/* ── RESET ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* ── BASE NAV ── */
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: var(--nav-z);
+  display: flex;
+  align-items: center;
+  height: var(--nav-height);
+  padding: 1rem 1.5rem;
+  background: var(--primary-bg);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--nav-border);
+  box-shadow:
+    0 10px 30px rgba(0,0,0,0.22);
+  will-change: transform;
+  contain: layout style;
+}
+
+/* ── LOGO (left) ── */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.65rem;
+  width: 100px;
+  height: 3rem;
+  color: var(--nav-logo-color);
+  font-family: 'DM Sans', sans-serif;
+  text-decoration: none;
+  flex-shrink: 0;
+  margin-right: auto;
+}
+
+.navbar-logo img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #15803d, #0f5c2e);
+  color: var(--nav-logo-color);  
+  font-family: 'DM Mono', monospace;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border-radius: 8px;
+  letter-spacing: 0;
+  box-shadow: 0 4px 14px rgba(21, 128, 61, 0.22); 
+}
+
+.logo-text {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--nav-logo-color);
+  letter-spacing: 0.03em;
+}
+
+/* ── DESKTOP NAV LIST (centre) ── */
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  list-style: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 0.95rem;
+  color: var(--nav-link-color);
+  text-decoration: none;
+}
+
+/* underline base (hidden) */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 4px;
+  width: 0;
+  height: 2px;
+  background: #b91c1c; /* your red accent */
+  transition: all 0.25s ease;
+  transform: translateX(-50%);
+}
+
+/* hover effect */
+.nav-link:hover::after {
+  width: 70%;
+}
+
+/* OPEN */
+.hamburger-icon.open .bar-top {
+  transform: rotate(45deg) translate(0px, 8.5px);
+  stroke: var(--nav-link-hover);
+}
+
+.hamburger-icon.open .bar-mid {
+  opacity: 0;
+}
+
+.hamburger-icon.open .bar-bot {
+  transform: rotate(-45deg) translate(0px, -8.5px);
+  stroke: var(--nav-link-hover);
+}
+
+/* ── MOBILE MENU ── */
+.mobile-menu {
+  display: none;
+  list-style: none;
+}
+
+/* ── RIGHT SIDE ── */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: auto;
+}
+
+/* ── CART BUTTON ── */
+.nav-cart-btn {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 1px solid var(--nav-border);
+  border-radius: 8px;
+  color: var(--nav-link-color);
+  cursor: pointer;
+  transition:
+    color var(--transition),
+    border-color var(--transition),
+    background var(--transition),
+    transform var(--transition);
+}
+
+.nav-cart-btn:hover {
+  color: #fff;
+  border-color:
+    rgba(193,18,31,0.45);
+  background:
+    rgba(193,18,31,0.08);
+  transform: translateY(-1px);
+}
+
+.nav-cart-badge {
+  position: absolute;
+  top: -6px;
+  right: -6px;
+  min-width: 17px;
+  height: 17px;
+  padding: 0 3px;
+  background: var(--nav-accent);
+  color: #fff;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.58rem;
+  font-weight: 700;
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  box-shadow:
+    0 4px 12px rgba(193,18,31,0.28);
+  animation: badgePop 220ms ease both;
+}
+
+.icon {
+  font-size: 1.8rem;
+  color: #ffffff;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+
+/* IMPORTANT: forces react-icons SVG visibility */
+.icon svg {
+  width: 100%;
+  height: 100%;
+  stroke: #ffffff;
+  fill: #ffffff;
+}
+.hamburger-btn:hover .hamburger-react-icon {
+  color: #ffffff;
+  transform: scale(1.04);
+}
+
+.cart-react-icon {
+  font-size: 1.35rem;
+  color: var(--nav-logo-color) !important;
+  display: block;
+  flex-shrink: 0;
+}
+/* ─────────────────────────────────────────────
+   RESPONSIVE — ≤ 768px
+───────────────────────────────────────────── */
+@media (max-width: 768px) {
+
+  .nav-list {
+    display: none;
+  }
+
+  .icon {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: var(--nav-height);
+    left: 0;
+    right: 0;
+    background: var(--nav-mobile-bg);
+    border-bottom: 1px solid var(--nav-border);
+    padding: 0.5rem 0;
+    z-index: var(--nav-z);
+    box-shadow:
+      0 20px 40px rgba(0,0,0,0.25);
+    opacity: 0;
+    transform: translateY(-8px);
+    pointer-events: none;
+    transition:
+      opacity 200ms ease,
+      transform 200ms ease;
+  }
+
+  .mobile-menu--open {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: auto;
+  }
+
+  .mobile-menu .nav-link {
+    display: block;
+    padding: 0.9rem 1.5rem;
+    font-size: 0.82rem;
+    border-radius: 0;
+    border-left: 2px solid transparent;
+    transition:
+      color var(--transition),
+      background var(--transition),
+      border-color var(--transition);
+  }
+
+  .mobile-menu .nav-link:hover,
+  .mobile-menu .nav-link:focus-visible {
+    background:
+      rgba(193,18,31,0.06);
+
+    border-left-color:
+      var(--nav-accent);
+
+    color:
+      var(--nav-link-hover);
+  }
+}
+
+/* ── REDUCED MOTION ── */
+@media (prefers-reduced-motion: reduce) {
+
+  .bar,
+  .mobile-menu,
+  .nav-link,
+  .hamburger-btn,
+  .nav-cart-btn {
+    transition: none;
+  }
+}
+

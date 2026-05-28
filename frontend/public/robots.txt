@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://www.chilliehenaven.co.ke/sitemap.xml
+Host: https://www.chilliehenaven.co.ke
