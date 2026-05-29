@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Routes, Route,  } from 'react-router-dom';
+import { Routes, Route, HashRouter } from 'react-router-dom';
 import Navbar from './components/jsx/Navbar';
 import Home from './pages/Home';
 import ProductsPage from './pages/ProductsPage';
@@ -16,8 +16,9 @@ const App = () => {
 
   return (
     <>
-      <Navbar cart={cart} setCart={setCart} />
       {/* ✅ ROUTES */}
+      <HashRouter>
+        <Navbar cart={cart} setCart={setCart} />
       <Routes>
         <Route
           path="/"
@@ -34,6 +35,7 @@ const App = () => {
         <Route path="/blog/:slug" element={<BlogPage />} />
       </Routes>
       <Footer />
+      </HashRouter>
     </>
   );
 };
