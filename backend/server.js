@@ -6,6 +6,7 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import Product from './routes/Products.js';
 import BlogRoute from "./routes/BlogRoute.js";
+import ConfigRoute from './routes/ConfigRoute.js';
 
 const app = express();
 
@@ -30,6 +31,7 @@ app.use('/images', express.static(path.join(__dirname, 'data/images')));
 // ── ROUTES ────────────────────────────────────────────────────
 app.use('/api', Product);
 app.use("/api/blogs", BlogRoute);
+app.use('/api/config', ConfigRoute);
 
 // ── CATCH ALL ─────────────────────────────────────────────────
 app.use((req, res) => {
