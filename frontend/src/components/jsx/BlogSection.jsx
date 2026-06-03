@@ -44,6 +44,16 @@ function BlogSection() {
   const visibleBlogs = filteredBlogs.slice(0, visible);
   const hasMore = visible < filteredBlogs.length;
 
+
+  if (loading) return (
+    <section className="blog-section">
+      <h2 className="section-title">Latest Blog Updates</h2>
+      <p style={{ textAlign: 'center', padding: '2rem', color: '#008000' }}>
+        Loading blogs... this may take a moment on first visit 🌶️
+      </p>
+    </section>
+  );
+  
   return (
     <section className="blog-section">
       <h2 className="section-title">Latest Blog Updates</h2>

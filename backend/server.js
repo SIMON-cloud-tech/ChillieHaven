@@ -31,6 +31,10 @@ app.use('/api/config', ConfigRoute);
 app.use((req, res) => {
   res.status(404).json({ message: `Route not found: ${req.method} ${req.url}` });
 });
+// ── KEEP ALIVE PING ───────────────────────────────────────────
+app.get('/ping', (req, res) => {
+  res.json({ status: 'alive' });
+});
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

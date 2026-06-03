@@ -90,7 +90,9 @@ function BlogPage() {
       <div className="blog-page">
         <h1>{blog.title}</h1>
         <small>{blog.date}</small>
-        <p>{blog.content}</p>
+        {blog.content.split('\n\n').map((paragraph, i) => (
+        <p key={i}>{paragraph}</p>
+        ))}
       </div>
     </>
   );

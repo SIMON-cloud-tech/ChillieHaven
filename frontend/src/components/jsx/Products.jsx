@@ -145,13 +145,11 @@ const Products = ({ setCart }) => {
   const hasMore = visible < filteredProducts.length;
 
   // ── LOADING ──
-  if (loading) {
-    return (
-      <section className="products-section">
-        <p>Loading fresh chillies...</p>
-      </section>
-    );
-  }
+ if (loading) return (
+  <section className="products-section">
+    <p>Loading fresh chillies... this may take a moment on first visit 🌶️</p>
+  </section>
+);
 
   // ── ERROR ──
   if (error) {
