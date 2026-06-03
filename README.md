@@ -308,4 +308,3 @@ This repository is a lightweight, maintainable full-stack app for a Nairobi chil
 - performance enhancements through lazy images, memoization, and Vite build optimizations
 - an environment-driven configuration model for frontend and backend settings
 
-If you want, I can also add a short architecture diagram or a developer quickstart section for this repo.
