@@ -11,13 +11,13 @@ import ConfigRoute from './routes/ConfigRoute.js';
 const app = express();
 
 // ── CORS ──────────────────────────────────────────────────────
-// Allow requests from GitHub Pages (production) and localhost (development)
+// ── CORS (temporary: open to all for testing) ─────────────────
 app.use(cors({
-  origin: [
-    'https://SIMON-cloud-tech.github.io',
-    'http://localhost:5173'
-  ]
+  origin: '*',
+  methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+  allowedHeaders: ['Content-Type', 'Authorization']
 }));
+app.options('*', cors());
 
 app.use(express.json());
 
