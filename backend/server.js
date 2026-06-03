@@ -11,34 +11,27 @@ import ConfigRoute from './routes/ConfigRoute.js';
 const app = express();
 
 // ── CORS ──────────────────────────────────────────────────────
-// ── CORS (temporary: open to all for testing) ─────────────────
 app.use(cors({
   origin: '*',
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization']
 }));
-app.options('*', cors());
 
 app.use(express.json());
 
-/* ── fix __dirname for ES modules ── */
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-/* ── serve images from backend/data/images ── */
 app.use('/images', express.static(path.join(__dirname, 'data/images')));
 
-// ── ROUTES ────────────────────────────────────────────────────
 app.use('/api', Product);
 app.use("/api/blogs", BlogRoute);
 app.use('/api/config', ConfigRoute);
 
-// ── CATCH ALL ─────────────────────────────────────────────────
 app.use((req, res) => {
   res.status(404).json({ message: `Route not found: ${req.method} ${req.url}` });
 });
 
-// ── START SERVER ──────────────────────────────────────────────
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
